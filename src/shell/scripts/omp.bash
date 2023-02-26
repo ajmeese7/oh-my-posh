@@ -10,7 +10,7 @@ PS0='${omp_start_time:0:$((omp_start_time="$(_omp_start_timer)",0))}'
 PS2="$(::OMP:: print secondary --config="$POSH_THEME" --shell=bash --shell-version="$BASH_VERSION")"
 
 function _set_posh_cursor_position() {
-      # not supported in Midnight Commander
+    # not supported in Midnight Commander
     # see https://github.com/JanDeDobbeleer/oh-my-posh/issues/3415
     if [[ "::CURSOR::" != "true" ]] || [[ -v MC_SID ]]; then
         return
